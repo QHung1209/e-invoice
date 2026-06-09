@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npx nx *)",
       "Bash(xxd .husky/commit-msg)",
-      "Bash(printf 'npx --no -- commitlint --edit $1\\\\n' > .husky/commit-msg && xxd .husky/commit-msg)"
+      "Bash(printf 'npx --no -- commitlint --edit $1\\\\n' > .husky/commit-msg && xxd .husky/commit-msg)",
+      "Bash(git config *)"
     ],
     "additionalDirectories": ["D:\\microservices\\e-invoice\\.husky"]
   }
