@@ -4,7 +4,12 @@
       "Bash(npx nx *)",
       "Bash(xxd .husky/commit-msg)",
       "Bash(printf 'npx --no -- commitlint --edit $1\\\\n' > .husky/commit-msg && xxd .husky/commit-msg)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(npm uninstall *)",
+      "Bash(git checkout *)",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match 'whisper|python|ollama|node|ggml|llama|faster|whispercpp|transcrib' } | Select-Object Id, ProcessName, @{Name='RAM\\(MB\\)';Expression={[math]::Round\\($_.WorkingSet64/1MB,1\\)}}, CPU | Sort-Object 'RAM\\(MB\\)' -Descending | Format-Table -AutoSize)",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='python.exe' OR Name='pythonw.exe'\")",
+      "Read(//c/Users/ADMIN/AppData/Roaming/Antigravity IDE/User/**)"
     ],
     "additionalDirectories": ["D:\\microservices\\e-invoice\\.husky"]
   }
